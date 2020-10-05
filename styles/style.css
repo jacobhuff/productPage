@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(250, 250, 245);
+}
+
+#navbar {
+  background-color: rgb(250, 250, 245);
+}
+
+.form-container {
+  padding-top: 50px;
+  width: 100%;
+  background-color: rgb(219, 219, 215);
+}
+
+#header-text {
+  padding-bottom: 10px;
+}
+
+#email {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.info-container {
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 50px;
+}
+
+.info {
+  height: 150px;
+  margin-right: 25px;
+}
+
+i {
+  float: left;
+  width: 200px;
+}
+
+.info h4 {
+  padding-top: 10px;
+}
+
+.info span {
+  font-style: italic;
+}
+
+.product-container {
+  width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-cards {
+  width: 250px;
+}
+
+.footer {
+  background-color: rgb(219, 219, 215);
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
