@@ -31,23 +31,32 @@ body {
 }
 
 .info-container {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   width: 800px;
   padding-top: 50px;
+  margin: 0 auto;
 }
 
 .info {
+  display: flex;
   height: 150px;
-  margin-right: 25px;
 }
 
 i {
-  float: left;
   width: 200px;
+  justify-self: start;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
 }
 
 .info h4 {
   padding-top: 10px;
+  justify-self: center;
 }
 
 .info span {
@@ -66,8 +75,62 @@ i {
 }
 
 .footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
   background-color: rgb(219, 219, 215);
   height: 100px;
   line-height: 100px;
   text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .product-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: unset;
+  }
+  .product-cards {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 820px) {
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+  .info-container {
+    width: 300px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  i {
+    width: 200px;
+    justify-self: start;
+  }
+
+  .info-text {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .info h4 {
+    padding-top: 10px;
+    justify-self: center;
+  }
+
+  .info span {
+    font-style: italic;
+  }
 }
